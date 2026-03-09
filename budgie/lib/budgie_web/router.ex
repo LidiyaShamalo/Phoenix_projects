@@ -14,9 +14,11 @@ defmodule BudgieWeb.Router do
     plug :accepts, ["json"]
   end
 
+  #localhost
   scope "/", BudgieWeb do
     pipe_through :browser
 
+    # root route
     get "/", PageController, :home
   end
 
