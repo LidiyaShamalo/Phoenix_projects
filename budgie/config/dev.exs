@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :budgie, Budgie.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "postgres",   #System.get_env("PG_PASS"),
   hostname: "localhost",
   database: "budgie_dev",
   stacktrace: true,
